@@ -134,8 +134,6 @@ jobs:
         export CXX=/usr/bin/clang++
         export CFLAGS="-Weverything"
         export CXXFLAGS="-Weverything"
-        cmake -GNinja ../ci/cmake-preloads/config-linux-all.txt ..
-        cmake --build .
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
